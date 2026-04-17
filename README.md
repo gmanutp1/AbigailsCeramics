@@ -15,4 +15,5 @@ npm run dev
 - Placeholder SVG imagery lives in `public/images/` and is ready to be replaced with real photography.
 - Shared storefront UI lives in `components/`, including the sticky header, cart drawer, quick view modal, and search modal.
 - The current cart and forms are frontend placeholders designed to be swapped later for Shopify, Stripe, or another commerce backend.
+- The repo is configured for GitHub Pages deployment through GitHub Actions.
 - This implementation assumes you wanted a custom Next.js frontend prototype even though the brief also mentioned Squarespace.
