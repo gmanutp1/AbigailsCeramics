@@ -5,7 +5,13 @@ import { ProductGallery } from "@/components/product-gallery";
 import { ProductGrid } from "@/components/product-grid";
 import { ProductPurchasePanel } from "@/components/product-purchase-panel";
 import { SectionHeading } from "@/components/section-heading";
-import { getProductBySlug, getRelatedProducts } from "@/lib/data";
+import { getProductBySlug, getRelatedProducts, products } from "@/lib/data";
+
+export function generateStaticParams() {
+  return products.map((product) => ({
+    slug: product.slug,
+  }));
+}
 
 export default function ProductPage({ params }) {
   const product = getProductBySlug(params.slug);
